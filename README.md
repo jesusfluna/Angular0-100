@@ -6,5 +6,5 @@
 * Linkado de la libreria bootstrap y algunos estilos a nuestros componentes
 * Ejemplo de uso de *ngIf y *ngFor
 
-##02-spa:
-*Aplicacion de "una pagina"
+## 02-spa:
+* Aplicacion de "una pagina"
