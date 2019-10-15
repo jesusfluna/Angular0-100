@@ -13,3 +13,15 @@
 
 ## 03-pipes:
 * Aplicacion de practica en el uso y creacion de Pipes
+* Uso de las pipes del sistema mas comunes
+* Pipe para mostrar Json
+* Pipe para poder usar un codigo dom
+* Creacion de una pipe para la capitalizacion de la primera letra por palabra de un texto
+* Creacion de una pipe para ocultar una contraseña con *
+
+## 04-spotiapp:
+* Aplicacion para el consumo de la Api de Spotify
+
+###### Utilidades:
+* Animaciones CSS: https://daneden.github.io/animate.css/
+* Spotify API dashboard: https://developer.spotify.com/dashboard/
