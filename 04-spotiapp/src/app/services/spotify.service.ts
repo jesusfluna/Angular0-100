@@ -7,13 +7,24 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
 export class SpotifyService {
 
   constructor(private http:HttpClient) { }
+  token:string = "BQDii-Hx1NIyxgxP4XK3B2GeZP9EHWgyk7efukYyHdKp6d461E2BMt9-r_GBOr_NZBzEMVkLKjXEH_HYn1HsG7kEbwcO9ChRHZ9Rouj3uOLXQn-p6SxHqoar5avwFkLpKNPj81XDWbGc";
+  limit:number = 50;
 
   getNewReleases(){
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQC-mtHO2RooMJVwNnNwf0c4L3RFxrXtSfYjaiTu6LLLlQ9HhwwFdUQmn2iaA0xKRXtucQ5l7c88nmamUG8WKvrdCZYD3BaKVBWDv9XvBcsvgD6LkCnTKiL05zLdYYbN_i_4VFw-3lkL',
+      'Authorization': 'Bearer '+this.token,
     });
 
-    return this.http.get("	https://api.spotify.com/v1/browse/new-releases",{headers});
+    return this.http.get("https://api.spotify.com/v1/browse/new-releases",{headers});
 
   }
+
+  getArtistas(termino:string){
+    const headers = new HttpHeaders({
+      'Authorization': 'Bearer '+this.token,
+    });
+
+    return this.http.get("https://api.spotify.com/v1/search?q="+termino+"&type=artist&limit=25",{headers});
+  }
+
 }
