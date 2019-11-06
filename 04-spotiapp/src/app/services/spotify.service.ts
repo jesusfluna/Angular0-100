@@ -5,15 +5,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http'
   providedIn: 'root'
 })
 export class SpotifyService {
-
-  constructor(private http:HttpClient) { }
+  token:string;
+  constructor(private http:HttpClient) {
+    this.token = "BQDh6VPhoMKsgFiUcEkY-Df6iwuFfrIFs73ARGfT5m88hNpJvwxGV19oEJ7b_rlE4XXo6aQNzUop_fJb3UivI2FN1I02Fc4GFhOLg0b3yYf_VomaA6ipanVPmvShd63aVrMIHvzLHQUt";
+   }
 
   getNewReleases(){
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQC-mtHO2RooMJVwNnNwf0c4L3RFxrXtSfYjaiTu6LLLlQ9HhwwFdUQmn2iaA0xKRXtucQ5l7c88nmamUG8WKvrdCZYD3BaKVBWDv9XvBcsvgD6LkCnTKiL05zLdYYbN_i_4VFw-3lkL',
+      'Authorization': 'Bearer '+this.token,
     });
 
-    return this.http.get("	https://api.spotify.com/v1/browse/new-releases",{headers});
-
+    return this.http.get("https://api.spotify.com/v1/browse/new-releases",{headers});
   }
 }
