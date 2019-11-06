@@ -29,3 +29,7 @@
         column-count: 5;
     }
 }
+
+.puntero {
+    cursor: pointer;
+}
