@@ -11,9 +11,12 @@ import { HomeComponent } from './components/home/home.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
-import { NoImagePipe } from './pipes/no-image.pipe';
 import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+
+//Pipes
+import { NoImagePipe } from './pipes/no-image.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NavbarComponent,
     SearchComponent,
     NoImagePipe,
+    DomseguroPipe,
     TarjetasComponent,
     LoadingComponent
   ],

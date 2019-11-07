@@ -6,8 +6,9 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class SpotifyService {
-  token:string = "BQB-RtQg1JhgTCHbzM0L8eIFP_f5O6B0UxeH2pmaoAUi6jvA9S5_dvHlHLZXBEQxOGTiaSRlnIJn499U77SPXIEeTWSaVslwe291TP6sAkvCW56kdChOQz2kZRDQFxVKIMRVNvQki84l";
+  token:string = "BQBtHvsI_3K3CFxFCV_36g9fooBPyRT3blwbyLwdyrqGCvqOtagxLtLZ2srflcs0j_22rFCmhGkmFWCwSINuUD_VljJDN32Wlzz32UshvcfdM3XpJjjdCEoY1G9kQwSu45pg3V6QQCGZ";
   limit:number = 25;
+  country:string = "ES";
 
   constructor(private http:HttpClient) { }
 
@@ -29,4 +30,11 @@ export class SpotifyService {
     return this.getQuery("search?q="+termino+"&type=artist&limit="+this.limit).pipe(map(data => data['artists'].items));
   }
 
+  getArtista(id:string){
+    return this.getQuery("artists/"+id);
+  }
+
+  getTopTracks(id:string){
+    return this.getQuery(`artists/${id}/top-tracks?country=${this.country}`).pipe(map(data => data['tracks']));
+  }
 }

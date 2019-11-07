@@ -19,8 +19,10 @@
 * Creacion de una pipe para la capitalizacion de la primera letra por palabra de un texto
 * Creacion de una pipe para ocultar una contraseña con *
 
-## 04-spotiapp:
+## 04-spotiapp (Token 1H):
 * Aplicacion para el consumo de la Api de Spotify
+* Canciones nuevas, busqueda de artista, nuevas caciones de un artista
+* Widget compacto para reproducir canciones
 
 ###### Utilidades:
 * Animaciones CSS: https://daneden.github.io/animate.css/
