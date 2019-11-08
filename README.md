@@ -24,6 +24,20 @@
 * Canciones nuevas, busqueda de artista, nuevas caciones de un artista
 * Widget compacto para reproducir canciones
 
+## 06-miscelaneos:
+* Aplicacion variada
+    * Ciclo de vida de un componente
+    * Rutas hijas
+    * ngSwitch
+    * Estilos y clases personalizados
+
 ###### Utilidades:
+* Bootstrap: https://getbootstrap.com/
 * Animaciones CSS: https://daneden.github.io/animate.css/
 * Spotify API dashboard: https://developer.spotify.com/dashboard/
+* Ionic: https://ionicframework.com/
+* FireBase: https://firebase.google.com/
+* Validador de Json: http://json.parser.online.fr/
+* FontAwesome: https://www.fontawesome.com/
+
+
