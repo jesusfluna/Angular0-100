@@ -24,7 +24,10 @@
 * Canciones nuevas, busqueda de artista, nuevas caciones de un artista
 * Widget compacto para reproducir canciones
 
-## 06-miscelaneos:
+## 05-deseos (en proceso):
+* Aplicacion de prueba en ionic
+
+## 06-miscelaneos (en proceso):
 * Aplicacion variada
     * Ciclo de vida de un componente
     * Rutas hijas
