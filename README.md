@@ -42,5 +42,6 @@
 * FireBase: https://firebase.google.com/
 * Validador de Json: http://json.parser.online.fr/
 * FontAwesome: https://www.fontawesome.com/
+* Ionic iconos: https://ionicons.com/
 
 
