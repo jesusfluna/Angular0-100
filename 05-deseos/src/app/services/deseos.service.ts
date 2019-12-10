@@ -8,16 +8,37 @@ export class DeseosService {
   listas:Lista [] = [];
 
   constructor() {
-    const lista1 = new Lista("Recolectar piedras del infinito");
-    const lista2 = new Lista("Heroes a desaparecer");
-
-    this.listas.push(lista1,lista2);
-
-    console.log(this.listas);
+    this.cargarStorage();
    }
 
-   crearLista(titulo:string){
+   crearLista(titulo:string):number{
     const nueva = new Lista(titulo);
     this.listas.push(nueva);
+    this.guardarStorage();
+
+    return nueva.id
+   }
+
+   guardarStorage(){
+    localStorage.setItem('data', JSON.stringify(this.listas));
+   }
+
+   cargarStorage(){
+    if(localStorage.getItem('data')){
+      this.listas = JSON.parse(localStorage.getItem('data'));
+    }else{
+      this.listas = [];
+    }
+   }
+
+   obtenerLista(id: string | number){
+     id = Number(id);
+
+     return this.listas.find( listaData => listaData.id === id );
+   }
+
+   borrarLista(lista:Lista){
+     this.listas = this.listas.filter(data => data.id !== lista.id);
+     this.guardarStorage();
    }
 }

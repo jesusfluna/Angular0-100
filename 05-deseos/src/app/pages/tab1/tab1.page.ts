@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DeseosService } from '../../services/deseos.service';
-import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -10,7 +10,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class Tab1Page {
 
-  constructor(public deseosService:DeseosService, private router:Router, private alertCtr:AlertController) {
+  constructor(public deseosService:DeseosService,private router:Router, private alertCtr:AlertController) {
 
   }
 
@@ -34,20 +34,19 @@ export class Tab1Page {
           },
           {
             text: 'Crear',
-            handler: ( data ) =>{ //data tiene el valor del objeto definido en el input
+            handler: ( data ) =>{ //data tiene el valor del objeto definido en el inputs
               console.log(data);
               if(data.titulo.length === 0){
                 return ;
               }
 
-              //Crear la lista
-              this.deseosService.crearLista(data.titulo);
+              const listaid = this.deseosService.crearLista(data.titulo);
+              this.router.navigateByUrl(`/tabs/tab1/agregar/${listaid}`);
             }
           }
       ]
     }); 
 
-    await alert.present();
-    //this.router.navigateByUrl("/tabs/tab1/agregar");
+    alert.present();
   }
 }

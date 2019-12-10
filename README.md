@@ -24,8 +24,11 @@
 * Canciones nuevas, busqueda de artista, nuevas caciones de un artista
 * Widget compacto para reproducir canciones
 
-## 05-deseos (en proceso):
+## 05-deseos:
 * Aplicacion de prueba en ionic
+* Lista de tareas terminadas y pendintes (checkboxs)
+* Navegacion entre tabs
+* Simple gestion de modulos
 
 ## 06-miscelaneos (en proceso):
 * Aplicacion variada
