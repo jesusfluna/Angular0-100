@@ -14,7 +14,6 @@ import { Component, OnInit } from '@angular/core';
     <button class="btn btn-primary" (click)="tamano = tamano -5">
       <i class="fa fa-minus"></i>
     </button>
-
   `,
   styles: []
 })
