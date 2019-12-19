@@ -30,12 +30,16 @@
 * Navegacion entre tabs
 * Simple gestion de modulos
 
-## 06-miscelaneos (en proceso):
+## 06-miscelaneos:
 * Aplicacion variada
     * Ciclo de vida de un componente
     * Rutas hijas
     * ngSwitch
     * Estilos y clases personalizados
+
+## 07-authapp:
+* Aplicacion de gestion de autenticaciones Auth
+* Autenticacion con Facebook, Twitter, Google, etc...
 
 ###### Utilidades:
 * Bootstrap: https://getbootstrap.com/
@@ -46,5 +50,6 @@
 * Validador de Json: http://json.parser.online.fr/
 * FontAwesome: https://www.fontawesome.com/
 * Ionic iconos: https://ionicons.com/
+* Aouth0: https://auth0.com/
 
 
