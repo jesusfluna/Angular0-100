@@ -40,6 +40,7 @@
 ## 07-authapp:
 * Aplicacion de gestion de autenticaciones Auth
 * Autenticacion con Facebook, Twitter, Google, etc...
+* Control de sesion
 
 ###### Utilidades:
 * Bootstrap: https://getbootstrap.com/
