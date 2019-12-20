@@ -1,0 +1,7 @@
+<h1>Perfil de usuario</h1>
+
+<br>
+
+<pre *ngIf="auth.userProfile$ | async as profile">
+    <code>{{profile | json}}</code>
+</pre>
