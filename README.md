@@ -41,6 +41,12 @@
 * Aplicacion de gestion de autenticaciones Auth
 * Autenticacion con Facebook, Twitter, Google, etc...
 
+## 07B-loginApp
+* Aplicacion de gestion de login clasico.
+* Uso de plantilla
+* Sweetalerts2
+* Tokens
+
 ###### Utilidades:
 * Bootstrap: https://getbootstrap.com/
 * Animaciones CSS: https://daneden.github.io/animate.css/
@@ -51,5 +57,6 @@
 * FontAwesome: https://www.fontawesome.com/
 * Ionic iconos: https://ionicons.com/
 * Aouth0: https://auth0.com/
+* Sweetalerts2: https://sweetalert2.github.io/
 
 
