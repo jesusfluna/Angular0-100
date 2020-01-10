@@ -40,6 +40,7 @@
 ## 07-authapp:
 * Aplicacion de gestion de autenticaciones Auth
 * Autenticacion con Facebook, Twitter, Google, etc...
+* Control de sesion
 
 ## 07B-loginApp
 * Aplicacion de gestion de login clasico.
