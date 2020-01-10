@@ -48,6 +48,10 @@
 * Sweetalerts2
 * Tokens
 
+## 08-Formularios (En proceso)
+* Aplicacion de tratamiento de formularios mediante templates
+* Aplicacion de tratamiento de formularios mediante datas
+
 ###### Utilidades:
 * Bootstrap: https://getbootstrap.com/
 * Animaciones CSS: https://daneden.github.io/animate.css/
