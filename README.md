@@ -48,9 +48,17 @@
 * Sweetalerts2
 * Tokens
 
-## 08-Formularios (En proceso)
+## 08-Formularios
 * Aplicacion de tratamiento de formularios mediante templates
 * Aplicacion de tratamiento de formularios mediante datas
+
+## 09-CRUD
+* Uso de Firebase
+* Desarrollo de metodos CRUD 
+* Animated css
+* Fontawesome
+* Bootstrap
+* sweetalert2
 
 ###### Utilidades:
 * Bootstrap: https://getbootstrap.com/
